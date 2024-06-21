@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=La+Belle+Aurore&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=IBM+Plex+Mono&family=Noto+Serif+JP:wght@200&family=Playfair+Display&family=Rubik+Broken+Fax&family=Single+Day&display=swap" rel="stylesheet">
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mah QB, Awwlii </title>
+    <link rel="icon" href="https://img.freepik.com/premium-vector/cute-heart-love-vector_363897-4231.jpg" type="image/gif">
+
+    <link rel="stylesheet" href="styles.css">
+
+    <script defer src="script.js"></script>
+</head>
+<body> 
+    <div class="loader">
+        <span class="loader__element"></span>
+        <span class="loader__element"></span>
+        <span class="loader__element"></span>
+    </div>
+    
+    <div id="popupContainer">
+        <div id="popupContent">
+            <button id="closePopup"></button>
+            <h2>A Little Note</h2>
+            <p id="note">Mah dear lady,
+                First of all, wut mah smol A cup tiddies doing? Water em up so later I can oil em up 🤠                 
+                Cheers to us, we r tgt for the past 5 months n still counting... hope we stay the same n get closer day by day andd 
+                set the world record of longest making out tym while cuddling n moree LOL.
+                 <br>
+                This Page contain some of my literary works. Click on the right hand side smol icon (crimson color)
+                Then click on the left top button to play the song and top right to increase the love showers xD!!!
+                I was putting pushing P first as the song but changed mah mind lol.
+                I love you so much mah Awwlii and glad you are mine <3 
+                   
+            </p>
+           
+        </div>
+    </div>
+    
+    <button id="musicButton" onclick="initiatePlayback()">🔈</button>
+
+    <div id="heartRateControl">
+        <label for="heartRateSlider">Love-o-meter </label>
+        <input id="heartRateSlider" type="range" min="50" max="700" step="5" value="300" onchange="updateHeartRate()">
+    </div>
+
+    <audio id="bgMusic" loop hidden><source src="bg.mp3" type="audio/mp3"></audio>
+    <audio id="popSound" hidden><source src="pop.mp3" type="audio/mp3"></audio>
+
+    <div class="click-catcher"></div>
+
+    <header>
+        <h1 class="hero-text"></h1>
+        <p class="quote">Loading quote...</p>
+    </header>
+    
+    <canvas id="waterCanvas"></canvas>
+
+    <p class="love">Dai-suki Awwlison 🐿🥰🫶🏻 
+        Onli yers Yasha</p>
+
+</body>
+</html>
